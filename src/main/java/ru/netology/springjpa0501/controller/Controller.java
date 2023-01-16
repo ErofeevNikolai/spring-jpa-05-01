@@ -32,5 +32,4 @@ public class Controller {
     private ResponseEntity<Optional> getByFio(@Validated Fio fio) {
         return new ResponseEntity<>(personRepo.findByFio(fio), HttpStatus.OK);
     }
-
 }
